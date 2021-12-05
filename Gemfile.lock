@@ -70,6 +70,18 @@ GEM
       activesupport (>= 5.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
+    kaminari (1.2.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.1)
+      kaminari-activerecord (= 1.2.1)
+      kaminari-core (= 1.2.1)
+    kaminari-actionview (1.2.1)
+      actionview
+      kaminari-core (= 1.2.1)
+    kaminari-activerecord (1.2.1)
+      activerecord
+      kaminari-core (= 1.2.1)
+    kaminari-core (1.2.1)
     loofah (2.12.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -143,6 +155,11 @@ GEM
     thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
+    trestle (0.9.5)
+      activemodel (>= 4.2.0)
+      kaminari (>= 1.1.0)
+      railties (>= 4.2.0)
+      sprockets-rails (>= 2.0.0)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
     websocket-driver (0.7.5)
@@ -161,6 +178,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.4, >= 6.0.4.1)
   sass-rails (>= 6)
+  trestle (~> 0.9.5)
 
 RUBY VERSION
    ruby 2.7.4p191
