@@ -13,6 +13,10 @@ module Tests
         assert(@initial_count > 0)
       end
 
+      test ".title" do
+        assert_equal(@model.title(), "Video Games")
+      end
+
       test ".icon_css_class" do
         refute_nil(@model.icon_css_class)
       end

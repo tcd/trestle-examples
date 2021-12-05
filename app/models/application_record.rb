@@ -15,6 +15,11 @@ class ApplicationRecord < ActiveRecord::Base
   # ============================================================================
 
   # @return [String]
+  def self.title()
+    return self.name.pluralize.gsub(/\B(?=[A-Z])/, " ")
+  end
+
+  # @return [String]
   def self.icon_css_class()
     raise NotImplementedError
   end

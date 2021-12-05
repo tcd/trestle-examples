@@ -1,7 +1,7 @@
 Trestle.resource(:users) do
 
   menu do
-    item(:users, icon: @admin.model.icon_css_class)
+    item(@admin.model.title, icon: @admin.model.icon_css_class)
   end
 
   table(autolink: true) do
