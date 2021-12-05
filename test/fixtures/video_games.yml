@@ -1,0 +1,10 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+halo:
+  short_name: "Halo"
+  full_name: "Halo: Combat Evolved"
+  release_date: <%= Date.new(2001, 9, 15).to_s(:db) %>
+
+sf2:
+  full_name: "Street Fighter II: The World Warrior"
+  release_date: <%= Date.new(1991, 2, 6).to_s(:db) %>

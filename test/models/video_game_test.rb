@@ -2,10 +2,10 @@ require "test_helper"
 
 module Tests
   module Models
-    class UserTest < ActiveSupport::TestCase
+    class VideoGameTest < ActiveSupport::TestCase
 
       setup do
-        @model         = User
+        @model         = VideoGame
         @initial_count = @model.count()
       end
 
