@@ -1,0 +1,36 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+cammy:
+  email: "cammy.white@capcom.com"
+  first_name: "Cammy"
+  last_name: "White"
+  profile_picture_url: "https://streetfighter.com/wp-content/uploads/2019/11/portrait-cammy-2.jpg"
+  password_digest: <%= BCrypt::Password.create("password") %>
+
+charlie:
+  email: "charlie.nash@capcom.com"
+  first_name: "Charlie"
+  last_name: "Nash"
+  profile_picture_url: "https://streetfighter.com/wp-content/uploads/2019/11/portrait-nash-2.jpg"
+  password_digest: <%= BCrypt::Password.create("password") %>
+
+ken:
+  email: "ken.masters@capcom.com"
+  first_name: "Ken"
+  last_name: "Masters"
+  profile_picture_url: "https://streetfighter.com/wp-content/uploads/2019/11/portrait-ken-2.jpg"
+  password_digest: <%= BCrypt::Password.create("password") %>
+
+karin:
+  email: "karin.kanzuki@capcom.com"
+  first_name: "Karin"
+  last_name: "Kanzuki"
+  profile_picture_url: "https://streetfighter.com/wp-content/uploads/2019/11/portrait-karin-2.jpg"
+  password_digest: <%= BCrypt::Password.create("password") %>
+
+dan:
+  email: "dan.hibiki@capcom.com"
+  first_name: "Dan"
+  last_name: "Hibiki"
+  profile_picture_url: "https://streetfighter.com/wp-content/uploads/2021/02/portrait-dan.jpg"
+  password_digest: <%= BCrypt::Password.create("password") %>
