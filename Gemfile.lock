@@ -56,19 +56,20 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
-    bindex (0.8.1)
     builder (3.2.4)
-    byebug (11.1.3)
+    coderay (1.1.3)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     erubi (1.10.0)
     ffi (1.15.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.11.3)
-      activesupport (>= 5.0.0)
     loofah (2.12.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -84,6 +85,11 @@ GEM
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     pg (1.2.3)
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
     puma (4.3.10)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -139,11 +145,6 @@ GEM
     tilt (2.0.10)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
-    web-console (4.2.0)
-      actionview (>= 6.0.0)
-      activemodel (>= 6.0.0)
-      bindex (>= 0.4.0)
-      railties (>= 6.0.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -153,14 +154,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  byebug
-  jbuilder (~> 2.7)
+  dotenv-rails (~> 2.7)
   pg (>= 0.18, < 2.0)
+  pry (~> 0.13.0)
+  pry-rails
   puma (~> 4.1)
   rails (~> 6.0.4, >= 6.0.4.1)
   sass-rails (>= 6)
-  tzinfo-data
-  web-console (>= 3.3.0)
 
 RUBY VERSION
    ruby 2.7.4p191
