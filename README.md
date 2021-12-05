@@ -1,24 +1,10 @@
-# README
+# Trestle Examples
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![Ruby Version](https://img.shields.io/badge/Ruby-2.7.4-CC342D.svg )
+![Rails Version](https://img.shields.io/badge/Rails-6.0.4.1-CC342D.svg)
 
-Things you may want to cover:
+Code examples for [the Trestle admin framework](https://github.com/TrestleAdmin/trestle).
 
-* Ruby version
+## License
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
