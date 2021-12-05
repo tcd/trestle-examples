@@ -10,6 +10,7 @@ gem "rails", "~> 6.0.4", ">= 6.0.4.1" # Bundle edge Rails instead: gem 'rails', 
 gem "pg", ">= 0.18", "< 2.0" # Use postgresql as the database for Active Record
 gem "puma", "~> 4.1" # Use Puma as the app server
 gem "sass-rails", ">= 6" # Use SCSS for stylesheets
+gem "sqlite3", "~> 1.4" # Use sqlite3 as the database for Active Record
 
 group :development, :test do
   gem "dotenv-rails", "~> 2.7" # Load .env files
