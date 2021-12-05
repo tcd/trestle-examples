@@ -1,24 +1,24 @@
 Trestle.resource(:users) do
 
   menu do
-    item(@admin.model.title, icon: @admin.model.icon_css_class)
+    item(@admin.model.title(), icon: @admin.model.icon_css_class())
   end
 
   table(autolink: true) do
-    column(:profile_picture, header: nil, sort: false, align: :center) do |user|
+    column(:profile_picture, sort: false, header: nil, align: :center) do |user|
       avatar(fallback: user.initials) { image_tag(user.avatar_url) }
     end
-    column(:display_name, header: "Name", sort: false)
+    column(:display_name, sort: false, header: "Name")
     column(:email)
-    column(:created_at, align: :center)
-    column(:updated_at, align: :center)
+    # column(:created_at, align: :center)
+    # column(:updated_at, align: :center)
   end
 
   # @param user [User]
   form do |user|
 
     row do
-      col(sm: 6) { text_field(:email) }
+      col(sm: 6) { email_field(:email) }
     end
 
     row do
@@ -43,4 +43,5 @@ Trestle.resource(:users) do
             # :password_confirmation,
           )
   end
+
 end
