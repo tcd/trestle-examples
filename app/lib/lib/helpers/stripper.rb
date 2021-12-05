@@ -1,5 +1,6 @@
 module Lib
   module Helpers
+    # Remove blank entries in array columns before validation.
     module Stripper
 
       # @return [void]

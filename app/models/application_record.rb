@@ -5,6 +5,9 @@
 #   - {#display_name}
 class ApplicationRecord < ActiveRecord::Base
 
+  # Remove blank entries in array columns before validation.
+  include Lib::Helpers::Stripper
+
   self.abstract_class = true
 
   # ============================================================================
