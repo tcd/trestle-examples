@@ -7,6 +7,7 @@ gem "rails", "~> 6.0.4", ">= 6.0.4.1" # Bundle edge Rails instead: gem 'rails', 
 
 gem "bcrypt", "~> 3.1.7" # Use Active Model has_secure_password
 # gem "image_processing", "~> 1.2" # Use Active Storage variant
+gem "lograge", "~> 0.11.2" # Tame Rails' multi-line logging into a single line per request
 gem "pg", ">= 0.18", "< 2.0" # Use postgresql as the database for Active Record
 gem "puma", "~> 4.1" # Use Puma as the app server
 gem "sass-rails", ">= 6" # Use SCSS for stylesheets
