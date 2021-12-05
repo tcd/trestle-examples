@@ -5,6 +5,15 @@ halo:
   full_name: "Halo: Combat Evolved"
   release_date: <%= Date.new(2001, 9, 15).to_s(:db) %>
 
+halo_2:
+  full_name: "Halo 2"
+  release_date: <%= Date.new(2004, 9, 9).to_s(:db) %>
+
+halo_3:
+  full_name: "Halo 3"
+  release_date: <%= Date.new(2007, 9, 25).to_s(:db) %>
+
 sf2:
+  short_name: "Street Fighter II"
   full_name: "Street Fighter II: The World Warrior"
   release_date: <%= Date.new(1991, 2, 6).to_s(:db) %>

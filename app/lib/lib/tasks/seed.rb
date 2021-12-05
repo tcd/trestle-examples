@@ -16,7 +16,8 @@ module Lib
       # @return [Hash]
       def self.all()
         invalid = {}
-        invalid["users"] = self.users()
+        invalid["users"]       = self.users()
+        invalid["video_games"] = self.video_games()
         return invalid
       end
 
@@ -93,6 +94,18 @@ module Lib
             last_name:           fx["last_name"],
             profile_picture_url: fx["profile_picture_url"],
             password_digest:     fx["password_digest"],
+          }
+        end
+        return nil
+      end
+
+      # @return [void]
+      def self.video_games()
+        self.from_fixture("video_games.yml", VideoGame) do |fx|
+          _args = {
+            full_name:    fx["full_name"],
+            short_name:   fx["short_name"],
+            release_date: fx["release_date"],
           }
         end
         return nil
