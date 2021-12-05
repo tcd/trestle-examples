@@ -6,6 +6,10 @@
 
 Code examples for [the Trestle admin framework](https://github.com/TrestleAdmin/trestle).
 
+## This Branch
+
+This branch contains example usage of [trestle-active_storage](https://github.com/richardvenneman/trestle-active_storage).
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
