@@ -2,6 +2,38 @@
 
 <%= render(layout: "layout", locals: { wrapper: true, sidebar: false, hide_breadcrumbs: false }) do %>
 
-    <h2 class="pb-3">Trestle Examples</h2>
+    <!-- <h1 class="pb-3">Trestle Examples</h1> -->
+    <h1>Trestle Examples</h1>
+
+    <hr/>
+
+    <h2>Branches:</h2>
+
+    <section class="pt-5">
+        <h3>
+            <a href="https://github.com/tcd/trestle-examples/tree/trestle-active_storage"><em>trestle-active_storage</em></a>
+        </h3>
+        <ul>
+            <li>
+                Contains example usage of <a href="https://github.com/richardvenneman/trestle-active_storage">trestle-active_storage</a>.
+            </li>
+        </ul>
+    </section>
+
+    <section class="pt-5">
+        <h3>
+            <a href="https://github.com/tcd/trestle-examples/tree/trestle-active_storage-fork"><em>trestle-active_storage-fork</em></a>
+        </h3>
+        <ul>
+            <li>
+                Contains example usage of <a href="https://github.com/richardvenneman/trestle-active_storage">a forked version</a> of <a href="https://github.com/richardvenneman/trestle-active_storage">trestle-active_storage</a>.
+            </li>
+            <li>
+                The fork adds support for previewing image attachments before they are uploaded.
+            </li>
+        </ul>
+    </section>
+
 
 <% end %>
+
