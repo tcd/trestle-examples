@@ -24,6 +24,6 @@ const removeAlerts = () => {
 }
 
 Trestle.init(() => {
+    // collapseAppNav()
     removeAlerts()
-    collapseAppNav()
 })
