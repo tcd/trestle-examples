@@ -47,7 +47,7 @@ class User < ApplicationRecord
     return [
       self.first_name&.[](0),
       self.last_name&.[](0),
-    ].compact_blank.join("")
+    ].reject(&:blank?).join("")
   end
 
   # @return [String]
