@@ -36,7 +36,18 @@ class User < ApplicationRecord
 
   # @return [String]
   def display_name()
-    return [self.first_name, self.last_name].uniq.join(" ")
+    return [
+      self.first_name,
+      self.last_name,
+    ].uniq.join(" ")
+  end
+
+  # @return [String]
+  def initials()
+    return [
+      self.first_name&.[](0),
+      self.last_name&.[](0),
+    ].compact_blank.join("")
   end
 
   # @return [String]
