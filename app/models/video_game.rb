@@ -1,5 +1,9 @@
 class VideoGame < ApplicationRecord
 
+  # @!attribute box_art
+  #   @return [ActiveStorage::Attached::One]
+  has_one_attached(:box_art)
+
   # =====================================================================
   # Attributes
   # =====================================================================
