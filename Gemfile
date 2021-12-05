@@ -15,7 +15,10 @@ gem "sass-rails", ">= 6" # Use SCSS for stylesheets
 
 # Trestle (Admin)
 gem "trestle", "~> 0.9.5" # Admin dashboard
-gem "trestle-active_storage", "~> 3.0" # ActiveStorage integration for Trestle
+# gem "trestle-active_storage", "~> 3.0" # ActiveStorage integration for Trestle
+gem "trestle-active_storage", github: "tcd/trestle-active_storage", branch: "image-preview" # ActiveStorage integration for Trestle
+
+# Trestle Forks
 
 group :development, :test do
   gem "dotenv-rails", "~> 2.7" # Load .env files

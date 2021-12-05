@@ -8,7 +8,7 @@ Code examples for [the Trestle admin framework](https://github.com/TrestleAdmin/
 
 ## This Branch
 
-This branch contains example usage of [trestle-active_storage](https://github.com/richardvenneman/trestle-active_storage).
+This branch contains example usage of a [forked version](https://github.com/tcd/trestle-active_storage/tree/image-preview) of  [trestle-active_storage](https://github.com/richardvenneman/trestle-active_storage).
 
 ## License
 
