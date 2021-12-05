@@ -10,6 +10,9 @@ class ApplicationRecord < ActiveRecord::Base
 
   self.abstract_class = true
 
+  # https://github.com/rubiety/nilify_blanks
+  nilify_blanks()
+
   # ============================================================================
   # Class Methods
   # ============================================================================
